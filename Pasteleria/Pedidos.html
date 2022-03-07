@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+</head>
+<style>
+    h1 {
+        font-family: Lobster, monospace;
+        color: purple;
+    }
+
+    p {
+        font-size: 16px;
+        font-family: monospace;
+        color: black;
+    }
+
+    .imagen-logo {
+        width: 100px;
+        height: 100px;
+        border-color: lightblue;
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 10px;
+    }
+
+    body {
+            background-color: darksalmon;
+        }
+        
+</style>
+
+<body>
+    <div align="center">
+        <a href="Principal.html">Inicio</a>
+        <a href="Pedidos.html">Haz tu pedido</a>
+        <a href="Pastelero.html">Lista de Pedidos</a>
+        <a href="AcercaDe.html">Acerca de</a></div>
+    </div>
+
+    <div align="center"> <img class="imagen-logo" src="Imagenes/logo.jpg" alt="Pasteleando"
+            border="0"></div>
+
+    <h1 align=center>Formulario Pedidos</h1>
+    <form action="/accion.js" id="form1" method="post">
+        <div align="center">
+            <label for="Nombre"> Nombre Completo</label><br>
+            <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre"><br><br>
+
+            <label for="correo1">Correo electronico</label><br>
+            <input type="email" placeholder="Ejemplo@mail.com" id="correo" name="correo"><br><br>
+
+            <label for="telefono">Numero de telefono</label><br>
+            <input type="tel" placeholder="Telefono a 10 Digitos" id="telefono" name="telefono" maxlength="10"><br><br>
+
+            <label for="fecha_entrega">Fecha de entrega</label><br>
+            <input type="date" id="fecha_entrega" name="fecha_entrega"><br>
+
+            <label for="Direccion">Direccion</label><br>
+            <input type="text" placeholder="Calle y numero" id="direccion" name="direccion"><br><br>
+
+            <label for="Sabor">Elige el sabor</label><br>
+            <select id="Sabor" name="Sabor">
+                <option value="Chocolate">Pastel de Chocolate desde $140</option>
+                <option value="3 Leches">Pastel de 3 leches desde $170</option>
+                <option value="Velvet">Pastel de Red Velvet desde $50</option>
+                <option value="Frutas">Pastel de Frutas desde $400</option>
+            </select><br><br>
+
+            <label for="cantidad">Cantidad</label><br>
+            <input type="number" placeholder="Cantidad" id="cantidad" name="cantidad"><br><br>
+
+            <label for="Decoracion">Decoraciones</label><br>
+            <select id="Decoracion" name="Decoracion">
+                <option value="Nada">Ninguno</option>
+                <option value="Vela">Velas desde $20</option>
+                <option value="Chispas">chispas $50</option>
+                <option value="Chispas Chocolate">Chispas de chocolate $60</option>
+                <option value="Diseño">Diseño personalizado desde $200</option>
+            </select><br><br>
+
+            <label for="Comentario">Tienes algun comentario sobre tu pedido agrega aqui los detalles</label><br>
+            <input type="text" placeholder="Datos o detalles extras" id="coemntario" name="comentario"><br><br>
+
+            <input type="button" id="boton1" name="boton1" value="Realizar Pedido"
+                onclick="alert('Pedido Realizado');"><br>
+            <input type="reset"><br>
+    </form>
+    </div>
+</html>
